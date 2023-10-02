@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/style1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="/Home..html"><img src="/logo.png" /></a>
+        <div class="nav-link" id="navLinks">
+          <i class="fa fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="/Home..html">HOME</a></li>
+            <li><a href="/About.html">ABOUT</a></li>
+            <li><a href="/Courses.html">COURSE</a></li>
+            <li><a href="/Blog.html">BLOG</a></li>
+            <li><a href="/Contact Us.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+
+    <!----Contact Us---->
+
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60382.87335016722!2d72.75311272167966!3d18.934510699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d1e71c2b104b%3A0x2b32a4be81621938!2sJai%20Hind%20College!5e0!3m2!1sen!2sin!4v1696283679606!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa-solid fa-home"></i>
+            <span>
+              <h4>XYZ Road, ABC Building</h4>
+              <p>Mumbai-400020</p>
+              <p>Maharashtra, India.</p>
+            </span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            <span>
+              <h4>+91 9512365476</h4>
+              <p>Monday to Saturday, 10AM to 6PM</p>
+            </span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <span>
+              <h4>info@eduford.com</h4>
+              <p>Email us your query</p>
+            </span>
+          </div>
+        </div>
+
+        <div class="contact-col">
+          <form action="">
+            <input type="text" placeholder="Enter your Name" required />
+            <input type="email" placeholder="Enter your Email" required />
+            <input type="text" placeholder="Enter your Subject" required />
+            <textarea rows="8" placeholder="Message" required></textarea>
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+
+    <section class="footer">
+      <h4>About us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, iste!
+        Illo sit id accusantium, hic quasi consectetur <br />
+        suscipit, esse in laboriosam eveniet quo incidunt cupiditate. Recusandae
+        ex possimus adipisci harum?
+      </p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p>Made With <i class="fa-solid fa-heart"></i> by Mohit</p>
+    </section>
+
+    <!---JavaScript for Toogle Menu--->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
